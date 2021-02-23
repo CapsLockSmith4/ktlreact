@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  color: darkgreen;
+  background-color: lightgreen;
+  border-width: 4px;
+  border-style: solid;
+  border-color: darkgreen;
+  height: 15%;
+}
+
+ul {
+  list-style: none;
+  align-items: flex-start;
+}
