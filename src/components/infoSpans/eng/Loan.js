@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Loan1 from './manageDebit/Loan1'
+import Loan1 from './LoanQ/Loan1'
 
 const LoanHome = ({lang}) => {
-   /* const [val, setVal] = useState (1);
+/* const [val, setVal] = useState (1);
     const [loan,setLoan] = useState ();
     switch (val) {
         case 1: setLoan( 
@@ -56,8 +56,8 @@ const LoanHome = ({lang}) => {
     return (
         (!lang) ? (
         <div>
-            <a href="#">What is a loan?</a>
-            <a href="#">Types of Debt- what debt could I get into?</a>
+            <div>What is a loan?</div>
+            <div>Types of Debt- what debt could I get into?</div>
             <button >Fines and Debt - what should I do?</button>
             <button >Letter of Demand - what is it?</button>
             <button >Statement of Claim - what is it?</button>
