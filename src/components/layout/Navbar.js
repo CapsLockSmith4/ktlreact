@@ -1,28 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Navbar = ({username}) => {
-    const [defaultTitle, setDefaultTitle] = useState('Know the Law');
-    const [lang,setLang] = useState(true)
+
+const Navbar = ({lang, title, onLangChange}) => {
     
-    const langChange = e => {
-            if (lang) {
-                setLang(false);
-                setDefaultTitle ('Know the Law');
-            } else {
-                setLang(true); 
-                setDefaultTitle ('知道法律');
-            }; 
-    };
-
     return (
         <nav className='navbar'>
-            <h1>{defaultTitle}</h1>
+            <h1>{title}</h1>
             {!lang ? (
-                    <button onClick={langChange}>中文</button>
+                    <button onClick={onLangChange}>中文</button>
             ) : (
-                    <button onClick={langChange}>English</button>
+                    <button onClick={onLangChange}>English</button>
             )}
-            {{username} ? <h3>{username}</h3> : <h3>Login</h3>}
+            <Link to='/'>HOME</Link>
         </nav>
     )
 }
