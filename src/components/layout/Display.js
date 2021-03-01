@@ -37,7 +37,7 @@ const Display = ({lang}) => {
             <Link className='btn btn-light' to='/Guaranteeing'>担保贷款</Link>
             <Link className='btn btn-light' to='/Domestic'>DOMESTIC VIOLENCE</Link>
             <Link className='btn btn-light' to='/Future'>FUTURE PLANNING</Link>
-    </div>));
+        </div>));
 }
 
 export default Display

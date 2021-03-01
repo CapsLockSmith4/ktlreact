@@ -23,15 +23,13 @@ import './App.css';
 
 const App = props => {
   const [lang, setLang] = useState (false);
-  const [title, setTitle] = useState("KNOW THE LAW");
-
-    const changeLanguage = event => {
+  
+  // Changing the Language at any time shouldn't make you restart the app
+  const changeLanguage = event => {
       if (lang) {
         setLang(prevCheck => !prevCheck);
-        setTitle('KNOW THE LAW');
       } else {
         setLang(prevCheck => !prevCheck);
-        setTitle('知道法律');
       }
     }
 
@@ -39,7 +37,7 @@ const App = props => {
     <Router>
       <div>
         <header>
-          <Navbar lang = {lang} title={title} onLangChange={changeLanguage} />
+          <Navbar lang = {lang} onLangChange={changeLanguage} />
           <Switch>
             <Route exact path='/' render={props => (<Display lang = {lang}/>)}/> 
             <Route path='/ManageCD'><Managing lang = {lang}/></Route>
