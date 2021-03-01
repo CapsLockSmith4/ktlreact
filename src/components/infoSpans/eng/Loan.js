@@ -20,11 +20,14 @@ const LoanHome = ({lang}) => {
                 <button onClick={() => setChoice(4)}>Letter of Demand - what is it?</button>
                 <button onClick={() => setChoice(5)}>Statement of Claim - what is it?</button>
             </div>
-            <div>{choice === 1 && <Loan1 lang={lang}/>} </div>
-            <div>{choice === 2 && <Loan2 lang={lang}/>} </div>
-            <div>{choice === 3 && <Loan3 lang={lang}/>} </div>
-            <div>{choice === 4 && <Loan4 lang={lang}/>} </div>
-            <div>{choice === 5 && <Loan5 lang={lang}/>} </div>
+            
+            <div>
+                {choice === 1 && <Loan1 lang={lang}/>} 
+                {choice === 2 && <Loan2 lang={lang}/>} 
+                {choice === 3 && <Loan3 lang={lang}/>} 
+                {choice === 4 && <Loan4 lang={lang}/>} 
+                {choice === 5 && <Loan5 lang={lang}/>} 
+            </div>
         </>
         
     ) : (
@@ -36,11 +39,13 @@ const LoanHome = ({lang}) => {
                 <button onClick={() => setChoice(4)}>缴款通知书 - 它是什么?</button>
                 <button onClick={() => setChoice(5)}>起诉书 - 它是什么?</button>
             </div>
-            <div>{choice === 1 && <Loan1 lang={lang}/>} </div>
-            <div>{choice === 2 && <Loan2 lang={lang}/>} </div>
-            <div>{choice === 3 && <Loan3 lang={lang}/>} </div>
-            <div>{choice === 4 && <Loan4 lang={lang}/>} </div>
-            <div>{choice === 5 && <Loan5 lang={lang}/>} </div>
+            <div>
+                {choice === 1 && <Loan1 lang={lang}/>} 
+                {choice === 2 && <Loan2 lang={lang}/>} 
+                {choice === 3 && <Loan3 lang={lang}/>} 
+                {choice === 4 && <Loan4 lang={lang}/>} 
+                {choice === 5 && <Loan5 lang={lang}/>} 
+            </div>
         </>
     )
     
