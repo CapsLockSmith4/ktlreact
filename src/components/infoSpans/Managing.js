@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Loan1 from './LoanQuestions/Loan1'
-import Loan2 from './LoanQuestions/Loan2'
-import Loan3 from './LoanQuestions/Loan3'
-import Loan4 from './LoanQuestions/Loan4'
-import Loan5 from './LoanQuestions/Loan5'
+import Loan1 from './ManagingQuestions/Managing1'
+import Loan2 from './ManagingQuestions/Managing2'
+import Loan3 from './ManagingQuestions/Managing3'
+import Loan4 from './ManagingQuestions/Managing4'
+import Loan5 from './ManagingQuestions/Managing5'
 
 
 const Managing = ({lang}) => {

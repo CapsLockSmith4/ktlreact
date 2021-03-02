@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 //import {Link} from 'react-router-dom'
 import Loan1 from './LoanQuestions/Loan1'
 import Loan2 from './LoanQuestions/Loan2'
@@ -51,4 +51,4 @@ const LoanHome = ({lang}) => {
     
     )}
 
-export default LoanHome
+export default LoanHome */
