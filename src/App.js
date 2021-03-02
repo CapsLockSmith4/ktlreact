@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/layout/Navbar';
 import Display from './components/layout/Display'
-import Loan from './components/infoSpans/eng/Loan'
-import Managing from './components/infoSpans/eng/Managing'
-import Budget from './components/infoSpans/eng/Budget'
-import Bankruptcy from './components/infoSpans/eng/Bankruptcy'
-import CreditTenancy from './components/infoSpans/eng/CreditTenancy'
-import Domestic from './components/infoSpans/eng/Domestic'
-import Driving from './components/infoSpans/eng/Driving'
-import Future from './components/infoSpans/eng/Future'
-import Guaranteeing from './components/infoSpans/eng/Guaranteeing'
-import Moving from './components/infoSpans/eng/Moving'
-import Police from './components/infoSpans/eng/Police'
-import Scams from './components/infoSpans/eng/Scams'
-import Working from './components/infoSpans/eng/Working'
-import Tenancy from './components/infoSpans/eng/Tenancy';
+import Loan from './components/infoSpans/Loan'
+import Managing from './components/infoSpans/Managing'
+import Budget from './components/infoSpans/Budget'
+import Bankruptcy from './components/infoSpans/Bankruptcy'
+import CreditTenancy from './components/infoSpans/CreditTenancy'
+import Domestic from './components/infoSpans/Domestic'
+import Driving from './components/infoSpans/Driving'
+import Future from './components/infoSpans/Future'
+import Guaranteeing from './components/infoSpans/Guaranteeing'
+import Moving from './components/infoSpans/Moving'
+import Police from './components/infoSpans/Police'
+import Scams from './components/infoSpans/Scams'
+import Working from './components/infoSpans/Working'
+import Tenancy from './components/infoSpans/Tenancy';
 
 
 

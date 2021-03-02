@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-//import {Link} from 'react-router-dom'
 import Loan1 from './LoanQuestions/Loan1'
 import Loan2 from './LoanQuestions/Loan2'
 import Loan3 from './LoanQuestions/Loan3'
@@ -20,11 +19,13 @@ const Managing = ({lang}) => {
                 <button onClick={() => setChoice(4)}>Letter of Demand - what is it?</button>
                 <button onClick={() => setChoice(5)}>Statement of Claim - what is it?</button>
             </div>
-            <div>{choice === 1 && <Loan1 lang={lang}/>} </div>
-            <div>{choice === 2 && <Loan2 lang={lang}/>} </div>
-            <div>{choice === 3 && <Loan3 lang={lang}/>} </div>
-            <div>{choice === 4 && <Loan4 lang={lang}/>} </div>
-            <div>{choice === 5 && <Loan5 lang={lang}/>} </div>
+            <div>
+                {choice === 1 && <Loan1 lang={lang}/>} 
+                {choice === 2 && <Loan2 lang={lang}/>} 
+                {choice === 3 && <Loan3 lang={lang}/>} 
+                {choice === 4 && <Loan4 lang={lang}/>} 
+                {choice === 5 && <Loan5 lang={lang}/>} 
+            </div>
         </>
         
     ) : (
@@ -36,11 +37,13 @@ const Managing = ({lang}) => {
                 <button onClick={() => setChoice(4)}>Lettt?</button>
                 <button onClick={() => setChoice(5)}>Statit?</button>
             </div>
-            <div>{choice === 1 && <Loan1 lang={lang}/>} </div>
-            <div>{choice === 2 && <Loan2 lang={lang}/>} </div>
-            <div>{choice === 3 && <Loan3 lang={lang}/>} </div>
-            <div>{choice === 4 && <Loan4 lang={lang}/>} </div>
-            <div>{choice === 5 && <Loan5 lang={lang}/>} </div>
+            <div>
+                {choice === 1 && <Loan1 lang={lang}/>} 
+                {choice === 2 && <Loan2 lang={lang}/>} 
+                {choice === 3 && <Loan3 lang={lang}/>} 
+                {choice === 4 && <Loan4 lang={lang}/>} 
+                {choice === 5 && <Loan5 lang={lang}/>} 
+            </div>
         </>
     )
     
