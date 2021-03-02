@@ -9,19 +9,25 @@ const Navbar = ({lang, onLangChange}) => {
     return (
         <nav className='navbar'>
             {!lang ? (
-                <div>
-                    <img src={Logo} />
-                    <h1>Know the Law</h1>
-                    <button onClick={onLangChange}><img src={ZeFlag} /></button>
+                <div className='navbits'>
+                    <div className='navtitle'>
+                        <img src={Logo} />
+                        <h1>Know the Law</h1>
+                    </div>
+                    
+                    <button  onClick={onLangChange}><img src={ZeFlag} style={{width:'90px', height:'45px'}} /></button>
                 </div>
             ) : (
-                <div>
+                <div className='navbits'>
+                    <div className='navtitle'>
                     <img src={Logo} />
                     <h1>知道法律</h1>
-                    <button onClick={onLangChange}><img src={AusFlag} /></button>
+                    </div>
+                    
+                    <button  onClick={onLangChange}><img src={AusFlag} style={{width:'90px', height:'45px'}}/></button>
                 </div>
             )}
-            <Link to='/'>HOME</Link>
+            <button className='btn' onclick={()=><Link to='/'/>}>Home</button>
         </nav>
     )
 }
