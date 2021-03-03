@@ -1,11 +1,10 @@
 import React from 'react'
 import lawIcon from '../../images/law.png'
-//import '../../../styles.css'
+import '../../../styles.css'
 
 const Managing1 = ({lang}) => {
     return (
         (!lang) ? (
-                <div >
                     <div  >
                         <p className="title">
                             <span className="fa-gavel-icon answer-icon">
@@ -38,10 +37,8 @@ const Managing1 = ({lang}) => {
                             The Financial Rights Legal Centre provides further information that you should read before you borrow money, or advice on what to do if you are <a className="ng-scope" href="http://financialrights.org.au/wp-content/uploads/2014/02/FRLC-Factsheet-Cant-Pay-Loan.pdf">struggling to pay your loan.</a>
                         </p>
                     </div>
-                </div>
 
     ) : (
-        <div >
         <div >
             <p className="title">
                 <span className="fa-gavel-icon answer-icon">
@@ -63,7 +60,7 @@ const Managing1 = ({lang}) => {
                 如果你正在理财问题中挣扎, 在<a href='http://financialrights.org.au/wp-content/uploads/2014/02/FRLC-Factsheet-Cant-Pay-Loan.pdf' >你贷款之前</a>应该阅读《金融权利法律中心》提供的信息和意见.
             </p>
         </div>
-    </div>
+
     ));
 }
 
