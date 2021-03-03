@@ -14,11 +14,11 @@ const Driving = ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button className='btnBig' onClick={() => setChoice(1)}>What is a Driving</button>
-                <button className='btnBig' onClick={() => setChoice(2)}>What types of debt are there?</button>
-                <button className='btnBig' onClick={() => setChoice(3)}>Fines and Debt - what should I do?</button>
-                <button className='btnBig' onClick={() => setChoice(4)}>Letter of Demand - what is it?</button>
-                <button className='btnBig' onClick={() => setChoice(5)}>Statement of Claim - what is it?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>Licence - do I need one?</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>How to get a licence?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>Insurance and my vehicle?</button>
+                <button className='btnBig' onClick={() => setChoice(4)}>Registration and my vehicle?</button>
+                <button className='btnBig' onClick={() => setChoice(5)}>Alcohol & Drugs</button>
             </div>
             <div className='question'>
                 {choice === 1 && <Driving1 lang={lang}/>} 
@@ -32,11 +32,11 @@ const Driving = ({lang}) => {
     ) : (
         <>
             <div>
-                <button className='btnBig' onClick={() => setChoice(1)}>什么是贷款?</button>
-                <button className='btnBig' onClick={() => setChoice(2)}>债务的类型 - 我能进入什么债务?</button>
-                <button className='btnBig' onClick={() => setChoice(3)}>罚款和债务 - 我该怎么办?</button>
-                <button className='btnBig' onClick={() => setChoice(4)}>缴款通知书 - 它是什么?</button>
-                <button className='btnBig' onClick={() => setChoice(5)}>起诉书 - 它是什么?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>驾照 - 我需要有驾照吗?</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>如何得到驾照?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>保险 - 我需要给我的车投保吗?</button>
+                <button className='btnBig' onClick={() => setChoice(4)}>注册 - 我必须注册我的车吗?</button>
+                <button className='btnBig' onClick={() => setChoice(5)}>酒精和毒品</button>
             </div>
             <div className='question'>
                 {choice === 1 && <Driving1 lang={lang}/>} 

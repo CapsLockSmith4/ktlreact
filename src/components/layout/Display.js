@@ -12,7 +12,7 @@ const Display = ({lang}) => {
             <Link className='btnBig ' to='/Moving'>MOVING TO NSW</Link>
             <Link className='btnBig ' to='/Police'>POLICE POWERS & FINES IN NSW</Link>
             <Link className='btnBig ' to='/Tenancy'>TENANCY IN NSW</Link>
-            <Link className='btnBig ' to='/Loans'>PAYDAY LOANS</Link>
+            <Link className='btnBig ' to='/Payday'>PAYDAY LOANS</Link>
             <Link className='btnBig ' to='/CreditTenancy'>CREDIT AND TENANCY RECORDS</Link>
             <Link className='btnBig ' to='/Budget'>BUDGETING</Link>
             <Link className='btnBig ' to='/Scams'>FINANCIAL SCAMS</Link>

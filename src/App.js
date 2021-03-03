@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
 import Display from './components/layout/Display'
-import Loan from './components/infoSpans/Loan'
+import Payday from './components/infoSpans/Payday'
 import Managing from './components/infoSpans/Managing'
 import Budget from './components/infoSpans/Budget'
 import Bankruptcy from './components/infoSpans/Bankruptcy'
@@ -47,7 +47,7 @@ const App = props => {
             <Route path='/Moving'><Moving lang = {lang}/></Route>
             <Route path='/Police'><Police lang = {lang}/></Route>
             <Route path='/Tenancy'><Tenancy lang = {lang}/></Route>
-            <Route path='/Loans'><Loan lang = {lang}/></Route>
+            <Route path='/Payday'><Payday lang = {lang}/></Route>
             <Route path='/CreditTenancy'><CreditTenancy lang = {lang}/></Route>
             <Route path='/Budget'><Budget lang = {lang}/></Route>
             <Route path='/Scams'><Scams lang = {lang}/></Route>

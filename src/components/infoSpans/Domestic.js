@@ -14,8 +14,8 @@ const Domestic = ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button className='btnBig' onClick={() => setChoice(1)}>What is a Loan</button>
-                <button className='btnBig' onClick={() => setChoice(2)}>Types of Debt- what debt could I get into?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}></button>
+                <button className='btnBig' onClick={() => setChoice(2)}></button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Fines and Debt - what should I do?</button>
                 <button className='btnBig' onClick={() => setChoice(4)}>Letter of Demand - what is it?</button>
                 <button className='btnBig' onClick={() => setChoice(5)}>Statement of Claim - what is it?</button>

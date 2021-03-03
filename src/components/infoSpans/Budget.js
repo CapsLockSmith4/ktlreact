@@ -9,7 +9,7 @@ const Budget = ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button className='btnBig' onClick={() => setChoice(1)}>What is bankruptcy?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>How do I make a budget?</button>
                 
             </div>
             <div className='question'>
@@ -21,7 +21,7 @@ const Budget = ({lang}) => {
     ) : (
         <>
             <div>
-                <button className='btnBig' onClick={() => setChoice(1)}>什么是破产？</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>如何编制预算？</button>
                 
             </div>
             <div className='question'>

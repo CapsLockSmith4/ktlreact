@@ -5,8 +5,8 @@ import lawIcon from '../../images/law.png'
 const Bankruptcy1 = ({lang}) => {
     return (
         (!lang) ? (
-                <div className="row">
-                    <div id="answer" className="answer answer1">
+                <div>
+                    <div >
                         <p className="title">
                             <span className="fa-gavel-icon answer-icon">
                                 <img src={lawIcon} alt="law symbol" className="image" />
@@ -21,8 +21,8 @@ const Bankruptcy1 = ({lang}) => {
 
 </div>
     ) : (
-        <div className="row">
-        <div id="answer" className="answer answer1">
+        <div >
+        <div >
             <p className="title">
                 <span className="fa-gavel-icon answer-icon">
                     <img src={lawIcon} alt='law symbol' className="image"/>
