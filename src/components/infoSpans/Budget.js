@@ -9,10 +9,10 @@ const Budget = ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>What is bankruptcy?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>What is bankruptcy?</button>
                 
             </div>
-            <div>
+            <div className='question'>
                 {choice === 1 && <Budget1 lang={lang}/>} 
                 
             </div>
@@ -21,10 +21,10 @@ const Budget = ({lang}) => {
     ) : (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>什么是破产？</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>什么是破产？</button>
                 
             </div>
-            <div>
+            <div className='question'>
                 {choice === 1 && <Budget1 lang={lang}/>} 
                 
             </div>

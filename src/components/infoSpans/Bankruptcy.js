@@ -10,11 +10,11 @@ const Bankruptcy = ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>What is bankruptcy?</button>
-                <button onClick={() => setChoice(2)}>What are the risks and benefits of bankruptcy?</button>
-                <button onClick={() => setChoice(3)}>Who can help me with bankruptcy?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>What is bankruptcy?</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>What are the risks and benefits of bankruptcy?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>Who can help me with bankruptcy?</button>
             </div>
-            <div>
+            <div className='question'>
                 {choice === 1 && <Bankruptcy1 lang={lang}/>} 
                 {choice === 2 && <Bankruptcy2 lang={lang}/>} 
                 {choice === 3 && <Bankruptcy3 lang={lang}/>} 
@@ -24,11 +24,11 @@ const Bankruptcy = ({lang}) => {
     ) : (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>什么是破产？</button>
-                <button onClick={() => setChoice(2)}>破产的风险和好处是什么？</button>
-                <button onClick={() => setChoice(3)}>谁能为我提供破产帮助？</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>什么是破产？</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>破产的风险和好处是什么？</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>谁能为我提供破产帮助？</button>
             </div>
-            <div>
+            <div className='question'>
                 {choice === 1 && <Bankruptcy1 lang={lang}/>} 
                 {choice === 2 && <Bankruptcy2 lang={lang}/>} 
                 {choice === 3 && <Bankruptcy3 lang={lang}/>} 

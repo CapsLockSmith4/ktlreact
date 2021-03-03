@@ -5,8 +5,8 @@ import '../../../styles.css'
 const Managing5 = ({lang}) => {
     return (
         (!lang) ? (
-            <div className="row">
-                <div id="answer3" className="answer answer3">
+            <div >
+                <div>
                     <p className="title">
                     <span className="fa-gavel-icon answer-icon">
                         <img src={lawIcon} alt="law symbol" className="image" />
@@ -19,8 +19,8 @@ const Managing5 = ({lang}) => {
 
 </div>
     ) : (
-        <div className="row">
-    <div id="answer" className="answer answer3">
+        <div >
+    <div >
         <p className="title">
             <span className="fa-gavel-icon answer-icon">
                 <img src={lawIcon} className="image" />

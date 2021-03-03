@@ -21,8 +21,8 @@ const Managing4 = ({lang}) => {
 
 </div>
     ) : (
-        <div className="row">
-    <div id="answer" className="answer answer3">
+        <div>
+    <div>
          <p className="title">
              <span className="fa-gavel-icon answer-icon">
                  <img src={lawIcon} className="image" />

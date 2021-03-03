@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer'
+import Navbar from './components/layout/Navbar'
 import Display from './components/layout/Display'
 import Loan from './components/infoSpans/Loan'
 import Managing from './components/infoSpans/Managing'
@@ -15,7 +16,7 @@ import Moving from './components/infoSpans/Moving'
 import Police from './components/infoSpans/Police'
 import Scams from './components/infoSpans/Scams'
 import Working from './components/infoSpans/Working'
-import Tenancy from './components/infoSpans/Tenancy';
+import Tenancy from './components/infoSpans/Tenancy'
 
 
 
@@ -37,7 +38,7 @@ const App = props => {
     <Router>
       <div>
         <header>
-          <Navbar lang = {lang} onLangChange={changeLanguage} />
+          <Navbar lang = {lang}/>
           <Switch>
             <Route exact path='/' render={props => (<Display lang = {lang}/>)}/> 
             <Route path='/ManageCD'><Managing lang = {lang}/></Route>
@@ -55,6 +56,7 @@ const App = props => {
             <Route path='/Domestic'><Domestic lang = {lang}/></Route>
             <Route path='/Future'><Future lang = {lang}/></Route>
           </Switch>
+          <Footer lang= {lang} onLangChange={changeLanguage}/>
         </header>
       </div>
     </Router>

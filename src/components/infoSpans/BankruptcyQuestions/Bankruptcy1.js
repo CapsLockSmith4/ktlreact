@@ -1,6 +1,6 @@
 import React from 'react'
 import lawIcon from '../../images/law.png'
-import '../../../styles.css'
+//import '../../../styles.css'
 
 const Bankruptcy1 = ({lang}) => {
     return (

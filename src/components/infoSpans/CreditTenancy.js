@@ -13,12 +13,12 @@ const CreditTenancy= ({lang}) => {
         (!lang) ? (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>What is a credit record?</button>
-                <button onClick={() => setChoice(2)}>How can I improve my credit record?</button>
-                <button onClick={() => setChoice(3)}>Where can I get help with my credit report?</button>
-                <button onClick={() => setChoice(4)}>What is a black list or tenancy record?</button>
+                <button className='btnBig' onClick={() => setChoice(1)}>What is a credit record?</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>How can I improve my credit record?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>Where can I get help with my credit report?</button>
+                <button className='btnBig' onClick={() => setChoice(4)}>What is a black list or tenancy record?</button>
             </div>
-            <div>
+            <div className='question'>
                 {choice === 1 && <Tenancy1 lang={lang}/>} 
                 {choice === 2 && <Tenancy2 lang={lang}/>} 
                 {choice === 3 && <Tenancy3 lang={lang}/>} 
@@ -28,11 +28,11 @@ const CreditTenancy= ({lang}) => {
         
     ) : (
         <>
-            <div>
-                <button onClick={() => setChoice(1)}>什么是信用记录？</button>
-                <button onClick={() => setChoice(2)}>如何提高信用记录？</button>
-                <button onClick={() => setChoice(3)}>在哪里可以获得有关信用报告的帮助？</button>
-                <button onClick={() => setChoice(4)}>什么是黑名单或租赁记录？</button>
+            <div className='question'>
+                <button className='btnBig' onClick={() => setChoice(1)}>什么是信用记录？</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>如何提高信用记录？</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>在哪里可以获得有关信用报告的帮助？</button>
+                <button className='btnBig' onClick={() => setChoice(4)}>什么是黑名单或租赁记录？</button>
             </div>
             <div>
                 {choice === 1 && <Tenancy1 lang={lang}/>} 

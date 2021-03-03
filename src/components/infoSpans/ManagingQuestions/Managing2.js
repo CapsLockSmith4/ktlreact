@@ -5,13 +5,13 @@ import '../../../styles.css'
 const Managing2 = ({lang}) => {
     return (
 		(!lang) ? (
-        <div>
-	        <div id="answer2" className="answer answer2">
-		        <p className="title">
-			    <span className="fa-gavel-icon answer-icon">
-				    <img src={lawIcon} alt="law symbol" className="image" />
-			    </span>Types of Debt
-		    </p>
+        <div  >
+		<div >
+			<p className="title">
+			<span className="fa-gavel-icon answer-icon">
+				<img src={lawIcon} alt="law symbol" className="image" />
+			</span>Types of Debt
+			</p>
         <br />
 			<p className="subtitle">Credit Card Debt</p>
 			<p className="content">A credit card allows you to purchase things now and pay for them at a later time. It is important to avoid credit card debt as you are charged interest on your purchases. It is very easy to overspend or exceed the limit on your credit card if you don’t keep a careful track of your expenses. You should aim to at least make the minimum repayment on any or all credit cards you have each month. If you cannot make the minimum repayment you should pay off whatever you can and then speak with your credit card provider about any possible repayment arrangements. The Financial Rights Legal Centre provides the following factsheet relating to <a href="http://financialrights.org.au/wp-content/uploads/2014/02/FRLC-Factsheet-Drowning-Credit-Cards1.pdf">credit card debt.</a></p>
@@ -24,8 +24,8 @@ const Managing2 = ({lang}) => {
 	</div>
 </div>
     ): (
-		<div className="row">
-    <div id="answer" className="answer answer2">
+		<div >
+    <div >
         <p className="title">
             <span className="fa-gavel-icon answer-icon">
                 <img src={lawIcon} className="image"/>

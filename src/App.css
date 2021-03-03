@@ -41,10 +41,13 @@
   background-image: linear-gradient(rgb(52, 155, 252), white);
   height: 15%;
 }
-
+p{
+  font-size: large;
+}
 ul {
   list-style: none;
   align-items: flex-start;
+  font-size: large;
 }
 
 .navtitle{
@@ -53,17 +56,68 @@ ul {
 .navbits > div{
   display: flex;
 }
+
+.btnFlag{
+  display: flex;
+}
 .btn {
   background-color: #555555;
   border-radius: 12px;
   width: 100px;
   height: 50px;
+  color: black;
+  text-align: center;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.btnBig{
+  background-color: #74a7f3;
+  border-radius: 12px;
+  width: 300px;
+  height: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: large;
+  color: black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #6296ad
+}
+.btnBig{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 .btnimg{
   width: auto;
   height:auto;
+}
+.centered{
+  align-content: center;
+}
+.grid {
+  margin:20px;
+  grid-template-columns: auto auto auto auto;
+  display: grid;
+  gap: 10px;
+}
+.question{
+  margin: 60px;
+}
+.title{
+  font-weight: bold;
+  font-size: xx-large;
+}
+.subtitle{
+  font-weight: bold;
+}
+.footer {
+  position:fixed;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  background-image: linear-gradient(white, rgb(52, 155, 252));
+  height: 10%;
 }

@@ -5,8 +5,8 @@ import '../../../styles.css'
 const Managing3 = ({lang}) => {
     return (
         (!lang) ? (
-            <div className="row">
-                <div id="answer3" className="answer answer3">
+            <div >
+                <div >
                     <p className="title">
                     <span className="fa-gavel-icon answer-icon">
                         <img src={lawIcon} alt="law symbol" className="image" />
@@ -39,27 +39,27 @@ const Managing3 = ({lang}) => {
                 </div>
             </div>
     ) : (
-        <div className="row">
-    <div id="answer" className="answer answer3">
-         <p className="title">
-             <span className="fa-gavel-icon answer-icon">
-                 <img src={lawIcon} className="image" />
-             </span>
-             罚款和债务 - 我该怎么办?
-         </p>
-        <br />
+        <div >
+    <div >
+        <p className="title">
+            <span className="fa-gavel-icon answer-icon">
+                <img src={lawIcon} className="image" />
+            </span>
+            罚款和债务 - 我该怎么办?
+        </p>
+    <br />
 
-         <p className="content">
-         这里有两种类型的罚款: 罚款通知和法院罚款. 罚款通知也被称为"当场罚款", 例子包括由警察开出的超速罚单当你驾驶及泊车的时候. 法院的罚款是 由法庭宣判后得出你有犯罪, 如果你不支付罚款, <a href='https://www.revenue.nsw.gov.au/fines' >新南威尔士州追讨债务办事处</a>(SDR)可能会追讨你欠的钱. 如果你是一个持有国际驾驶证的来访司机, 当 你未缴纳驾驶罚款时, 你的访客驾驶权益将会被取消. 如果你<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/are-you-having-problems-with-fines' >支付罚款有困难</a>,  可以寻求新南威尔士法律援助. 内部社区法律中心和费恩法律中心将对你的罚 款提供非常<a href='http://www.iclc.org.au/finedout/' >有益的指导</a>
-         </p>
+        <p className="content">
+        这里有两种类型的罚款: 罚款通知和法院罚款. 罚款通知也被称为"当场罚款", 例子包括由警察开出的超速罚单当你驾驶及泊车的时候. 法院的罚款是 由法庭宣判后得出你有犯罪, 如果你不支付罚款, <a href='https://www.revenue.nsw.gov.au/fines' >新南威尔士州追讨债务办事处</a>(SDR)可能会追讨你欠的钱. 如果你是一个持有国际驾驶证的来访司机, 当 你未缴纳驾驶罚款时, 你的访客驾驶权益将会被取消. 如果你<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/are-you-having-problems-with-fines' >支付罚款有困难</a>,  可以寻求新南威尔士法律援助. 内部社区法律中心和费恩法律中心将对你的罚 款提供非常<a href='http://www.iclc.org.au/finedout/' >有益的指导</a>
+        </p>
 
-         <p className="content">
-         关于你法律上欠款的最佳的选择就是尽快全额还清. 然而, 如果你无法做到的话, 可采取其他选择: <ul className='content-list'><li>外部纠纷解决(EDR). 尝试在庭外解决你的债务纠纷, 这可能涉及<a href='http://www.cjc.justice.nsw.gov.au' >社区司法中心的调解</a>. 如果你的债务是有关消费品或服务, 您可以联系《新南威尔士州民 事和行政仲裁庭》寻求解决;</li><li>你可以联系债权人并尝试通过谈判得出合适的, 实际的, 根据指定付款计划偿还债务的时间表;</li><li>如果你认为罚款是过度的或是错误的, 你可以在法庭上捍卫自己权益. 然而,  这是一个有压力和昂贵的过程, 它可能会花费比你欠的金额更多, 你应该寻求 法律咨询.</li></ul>
-         </p>
+        <p className="content">
+        关于你法律上欠款的最佳的选择就是尽快全额还清. 然而, 如果你无法做到的话, 可采取其他选择: <ul className='content-list'><li>外部纠纷解决(EDR). 尝试在庭外解决你的债务纠纷, 这可能涉及<a href='http://www.cjc.justice.nsw.gov.au' >社区司法中心的调解</a>. 如果你的债务是有关消费品或服务, 您可以联系《新南威尔士州民 事和行政仲裁庭》寻求解决;</li><li>你可以联系债权人并尝试通过谈判得出合适的, 实际的, 根据指定付款计划偿还债务的时间表;</li><li>如果你认为罚款是过度的或是错误的, 你可以在法庭上捍卫自己权益. 然而,  这是一个有压力和昂贵的过程, 它可能会花费比你欠的金额更多, 你应该寻求 法律咨询.</li></ul>
+        </p>
 
-         <p className="content">
-             如果需要帮忙请致电到土著金融权利部门-暴民债务援助1800 808 488, 或《金融 权利法律中心》信贷和债务热线 1800 007 007.
-         </p>
+        <p className="content">
+            如果需要帮忙请致电到土著金融权利部门-暴民债务援助1800 808 488, 或《金融 权利法律中心》信贷和债务热线 1800 007 007.
+        </p>
     </div>
 </div>
 
