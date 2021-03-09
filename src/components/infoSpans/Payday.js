@@ -1,54 +1,48 @@
-/*import React, { useState } from 'react'
-//import {Link} from 'react-router-dom'
-import Loan1 from './LoanQuestions/Loan1'
-import Loan2 from './LoanQuestions/Loan2'
-import Loan3 from './LoanQuestions/Loan3'
-import Loan4 from './LoanQuestions/Loan4'
-import Loan5 from './LoanQuestions/Loan5'
+import React, { useState } from 'react'
+import Payday1 from './PaydayQuestions/Payday1'
+import Payday2 from './PaydayQuestions/Payday2'
+import Payday3 from './PaydayQuestions/Payday3'
 
 
-const LoanHome = ({lang}) => {
+
+const Payday = ({lang}) => {
     const [choice,setChoice] = useState (1)
 
     return (
         (!lang) ? (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>What is a Loan</button>
-                <button onClick={() => setChoice(2)}>Types of Debt- what debt could I get into?</button>
-                <button onClick={() => setChoice(3)}>Fines and Debt - what should I do?</button>
-                <button onClick={() => setChoice(4)}>Letter of Demand - what is it?</button>
-                <button onClick={() => setChoice(5)}>Statement of Claim - what is it?</button>
+                <button onClick={() => setChoice(1)}>What is a Payday</button>
+                <button onClick={() => setChoice(2)}>Are there any alternatives to payday loans?</button>
+                <button onClick={() => setChoice(3)}>What can I do if I can’t pay my payday loan?</button>
+                
             </div>
             
             <div>
-                {choice === 1 && <Loan1 lang={lang}/>} 
-                {choice === 2 && <Loan2 lang={lang}/>} 
-                {choice === 3 && <Loan3 lang={lang}/>} 
-                {choice === 4 && <Loan4 lang={lang}/>} 
-                {choice === 5 && <Loan5 lang={lang}/>} 
+                {choice === 1 && <Payday1 lang={lang}/>} 
+                {choice === 2 && <Payday2 lang={lang}/>} 
+                {choice === 3 && <Payday3 lang={lang}/>} 
+            
             </div>
         </>
         
     ) : (
         <>
             <div>
-                <button onClick={() => setChoice(1)}>什么是贷款?</button>
-                <button onClick={() => setChoice(2)}>债务的类型 - 我能进入什么债务?</button>
-                <button onClick={() => setChoice(3)}>罚款和债务 - 我该怎么办?</button>
-                <button onClick={() => setChoice(4)}>缴款通知书 - 它是什么?</button>
-                <button onClick={() => setChoice(5)}>起诉书 - 它是什么?</button>
+                <button onClick={() => setChoice(1)}>什么是发薪日贷款？</button>
+                <button onClick={() => setChoice(2)}>是否有发薪日贷款的替代品？</button>
+                <button onClick={() => setChoice(3)}>如果无法偿还发薪日贷款，我该怎么办？</button>
+            
             </div>
             <div>
-                {choice === 1 && <Loan1 lang={lang}/>} 
-                {choice === 2 && <Loan2 lang={lang}/>} 
-                {choice === 3 && <Loan3 lang={lang}/>} 
-                {choice === 4 && <Loan4 lang={lang}/>} 
-                {choice === 5 && <Loan5 lang={lang}/>} 
+                {choice === 1 && <Payday1 lang={lang}/>} 
+                {choice === 2 && <Payday2 lang={lang}/>} 
+                {choice === 3 && <Payday3 lang={lang}/>} 
+            
             </div>
         </>
     )
     
     )}
 
-export default LoanHome */
+export default Payday 
