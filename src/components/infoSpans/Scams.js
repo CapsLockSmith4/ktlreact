@@ -41,8 +41,6 @@ const Scams = ({lang}) => {
             
             </div>
         </>
-    )
-    
-    )}
+    ))}
 
 export default Scams 
