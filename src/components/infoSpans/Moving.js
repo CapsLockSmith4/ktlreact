@@ -13,7 +13,7 @@ const Moving = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>Visas - how do I check my visa status and conditions?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>Arrival - what do I have to do when I arrive in Australia</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Student Insurance - do I need it while I'm studying in Australia</button>
@@ -31,7 +31,7 @@ const Moving = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>签证 - 如何检查签证状况和条款?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>到达 - 当到达澳大利亚时, 我必须做什么</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>学生保险 - 我在澳大利亚留学时需要办理保险吗?</button>

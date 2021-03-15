@@ -11,14 +11,14 @@ const Payday = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
-                <button onClick={() => setChoice(1)}>What is a Payday</button>
-                <button onClick={() => setChoice(2)}>Are there any alternatives to payday loans?</button>
-                <button onClick={() => setChoice(3)}>What can I do if I can’t pay my payday loan?</button>
+            <div className='grid'>
+                <button className='btnBig' onClick={() => setChoice(1)}>What is a Payday</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>Are there any alternatives to payday loans?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>What can I do if I can’t pay my payday loan?</button>
                 
             </div>
             
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Payday1 lang={lang}/>} 
                 {choice === 2 && <Payday2 lang={lang}/>} 
                 {choice === 3 && <Payday3 lang={lang}/>} 
@@ -28,13 +28,13 @@ const Payday = ({lang}) => {
         
     ) : (
         <>
-            <div>
-                <button onClick={() => setChoice(1)}>什么是发薪日贷款？</button>
-                <button onClick={() => setChoice(2)}>是否有发薪日贷款的替代品？</button>
-                <button onClick={() => setChoice(3)}>如果无法偿还发薪日贷款，我该怎么办？</button>
+            <div className='grid'>
+                <button className='btnBig' onClick={() => setChoice(1)}>什么是发薪日贷款？</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>是否有发薪日贷款的替代品？</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>如果无法偿还发薪日贷款，我该怎么办？</button>
             
             </div>
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Payday1 lang={lang}/>} 
                 {choice === 2 && <Payday2 lang={lang}/>} 
                 {choice === 3 && <Payday3 lang={lang}/>} 

@@ -13,7 +13,7 @@ const Driving = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>Licence - do I need one?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>How to get a licence?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Insurance and my vehicle?</button>
@@ -31,7 +31,7 @@ const Driving = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>驾照 - 我需要有驾照吗?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>如何得到驾照?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>保险 - 我需要给我的车投保吗?</button>

@@ -9,7 +9,7 @@ const Bankruptcy = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>What is bankruptcy?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>What are the risks and benefits of bankruptcy?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Who can help me with bankruptcy?</button>
@@ -23,7 +23,7 @@ const Bankruptcy = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>什么是破产？</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>破产的风险和好处是什么？</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>谁能为我提供破产帮助？</button>

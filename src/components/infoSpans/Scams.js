@@ -11,14 +11,14 @@ const Scams = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
-                <button onClick={() => setChoice(1)}>What scams should I be aware of?</button>
-                <button onClick={() => setChoice(2)}>How can I avoid getting scammed?</button>
-                <button onClick={() => setChoice(3)}>What can I do if I have been scammed?</button>
+            <div className='grid'>
+                <button className='btnBig' onClick={() => setChoice(1)}>What scams should I be aware of?</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>How can I avoid getting scammed?</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>What can I do if I have been scammed?</button>
                 
             </div>
             
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Scams1 lang={lang}/>} 
                 {choice === 2 && <Scams2 lang={lang}/>} 
                 {choice === 3 && <Scams3 lang={lang}/>} 
@@ -28,13 +28,13 @@ const Scams = ({lang}) => {
         
     ) : (
         <>
-            <div>
-                <button onClick={() => setChoice(1)}>我应该注意哪些诈骗？</button>
-                <button onClick={() => setChoice(2)}>如何避免被骗？</button>
-                <button onClick={() => setChoice(3)}>在被骗后该怎么办？</button>
+            <div className='grid'>
+                <button className='btnBig' onClick={() => setChoice(1)}>我应该注意哪些诈骗？</button>
+                <button className='btnBig' onClick={() => setChoice(2)}>如何避免被骗？</button>
+                <button className='btnBig' onClick={() => setChoice(3)}>在被骗后该怎么办？</button>
             
             </div>
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Scams1 lang={lang}/>} 
                 {choice === 2 && <Scams2 lang={lang}/>} 
                 {choice === 3 && <Scams3 lang={lang}/>} 

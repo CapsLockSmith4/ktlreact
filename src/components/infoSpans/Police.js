@@ -12,7 +12,7 @@ const Police = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>Police Searches - when can police stop and search persons in the street? Can the police search my home?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>Arrest - when can police arrest me?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Other Police Powers</button>
@@ -30,7 +30,7 @@ const Police = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>警方搜查 - 什么时候警方会在街上停下来搜查人? 警方能搜查我的家吗?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>逮捕 - 警方什么时可以逮捕我?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>警察的其他权力</button>

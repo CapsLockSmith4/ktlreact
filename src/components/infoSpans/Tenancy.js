@@ -12,7 +12,7 @@ const Tenancy = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>Who am I - boarder, lodger or tenant?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>Renting</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Tenant's obligations</button>
@@ -30,7 +30,7 @@ const Tenancy = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>我属于寄宿生 - 寄宿者还是租客？</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>租用</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>承租人的义务</button>

@@ -7,8 +7,10 @@ const Navbar = ({lang}) => {
         <nav className='navbar'>
             {!lang ? (
                 <div className='navbits navtitle'>
-                    <img src={Logo} />
-                    <h1>Know the Law</h1>
+                    <span className='inline'> <img src={Logo} />
+                    <h1 style={{'margin-left': '20px'}}>Know the Law</h1>
+                    </span>
+                    
                 </div>
             ) : (
                 <div className='navbits navtitle'>

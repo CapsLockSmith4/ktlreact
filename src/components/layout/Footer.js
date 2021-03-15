@@ -11,12 +11,12 @@ const Footer = ({lang, onLangChange}) => {
             {!lang ? (
                 <div className='foot'>
                     <Link className='btnHome' to='/'>Home</Link>
-                    <button className='btnFlag' onClick={onLangChange}><img src={ZeFlag} style={{width:'90px', height:'45px'}} /></button>
+                    <button style={{'margin-left': '20px'}} className='btnFlag' onClick={onLangChange}><img src={ZeFlag} style={{width:'90px', height:'45px'}} /></button>
                 </div>
             ) : (
                 <div className='foot'>
                     <Link className='btnHome' to='/'>家</Link>
-                    <button className='btnFlag' onClick={onLangChange}><img src={AusFlag} style={{width:'90px', height:'45px'}}/></button>
+                    <button style={{'margin-left': '20px'}} className='btnFlag' onClick={onLangChange}><img src={AusFlag} style={{width:'90px', height:'45px'}}/></button>
                 </div>
             )}
             </div>

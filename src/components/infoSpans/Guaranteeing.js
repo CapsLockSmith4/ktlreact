@@ -8,7 +8,7 @@ const Guaranteeing = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>What does it mean to guarantee a loan?</button>
                 
             </div>
@@ -20,7 +20,7 @@ const Guaranteeing = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>保证贷款意味着什么？</button>
                 
             </div>

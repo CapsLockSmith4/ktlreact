@@ -13,7 +13,7 @@ const Domestic = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}></button>
                 <button className='btnBig' onClick={() => setChoice(2)}></button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Fines and Debt - what should I do?</button>
@@ -41,7 +41,7 @@ const Domestic = ({lang}) => {
                 <button className='btnBig' onClick={() => setChoice(5)}>起诉书 - 它是什么?</button>
                 <button className='btnBig' onClick={() => setChoice(6)}>Statement of Claim - what is it?</button>
             </div>
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Domestic1 lang={lang}/>} 
                 {choice === 2 && <Domestic2 lang={lang}/>} 
                 {choice === 3 && <Domestic3 lang={lang}/>} 

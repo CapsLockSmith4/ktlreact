@@ -11,7 +11,7 @@ const Future = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}></button>
                 <button className='btnBig' onClick={() => setChoice(2)}></button>
                 <button className='btnBig' onClick={() => setChoice(3)}></button>
@@ -29,7 +29,7 @@ const Future = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>什么是贷款?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>债务的类型 - 我能进入什么债务?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>罚款和债务 - 我该怎么办?</button>

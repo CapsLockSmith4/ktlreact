@@ -17,6 +17,7 @@ import Police from './components/infoSpans/Police'
 import Scams from './components/infoSpans/Scams'
 import Working from './components/infoSpans/Working'
 import Tenancy from './components/infoSpans/Tenancy'
+import Gav from './components/layout/Gav'
 
 
 
@@ -24,7 +25,7 @@ import './App.css';
 
 const App = props => {
   const [lang, setLang] = useState (false);
-  
+  const [gav, setGav] = useState (true);
   // Changing the Language at any time shouldn't make you restart the app
   const changeLanguage = event => {
       if (lang) {
@@ -33,13 +34,19 @@ const App = props => {
         setLang(prevCheck => !prevCheck);
       }
     }
-
+    const switchGav = event => {
+      if (lang) {
+        setGav(prevCheck => !prevCheck);
+      } else {
+        setGav(prevCheck => !prevCheck);
+      }
+    }
   return (
     <Router>
       <div>
         <header>
-          <Navbar lang = {lang}/>
-          <Switch>
+          <Navbar lang = {lang} onGavChange={switchGav}/>
+          <Switch>           
             <Route exact path='/' render={props => (<Display lang = {lang}/>)}/> 
             <Route path='/ManageCD'><Managing lang = {lang}/></Route>
             <Route path='/Driving'><Driving lang = {lang}/></Route>
@@ -55,6 +62,7 @@ const App = props => {
             <Route path='/Guaranteeing'><Guaranteeing lang = {lang}/></Route>
             <Route path='/Domestic'><Domestic lang = {lang}/></Route>
             <Route path='/Future'><Future lang = {lang}/></Route>
+            <Route path='/Gav'><Gav lang = {lang}/></Route>
           </Switch>
           <Footer lang= {lang} onLangChange={changeLanguage}/>
         </header>

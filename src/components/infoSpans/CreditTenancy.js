@@ -12,7 +12,7 @@ const CreditTenancy= ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>What is a credit record?</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>How can I improve my credit record?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Where can I get help with my credit report?</button>
@@ -34,7 +34,7 @@ const CreditTenancy= ({lang}) => {
                 <button className='btnBig' onClick={() => setChoice(3)}>在哪里可以获得有关信用报告的帮助？</button>
                 <button className='btnBig' onClick={() => setChoice(4)}>什么是黑名单或租赁记录？</button>
             </div>
-            <div>
+            <div className='grid'>
                 {choice === 1 && <Tenancy1 lang={lang}/>} 
                 {choice === 2 && <Tenancy2 lang={lang}/>} 
                 {choice === 3 && <Tenancy3 lang={lang}/>} 

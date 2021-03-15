@@ -12,7 +12,7 @@ const Working = ({lang}) => {
     return (
         (!lang) ? (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>Types of Employees</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>Tax and Superannuation - what do I need to know?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>Employment Conditions - what am I entitled to?</button>
@@ -30,7 +30,7 @@ const Working = ({lang}) => {
         
     ) : (
         <>
-            <div>
+            <div className='grid'>
                 <button className='btnBig' onClick={() => setChoice(1)}>就业类别</button>
                 <button className='btnBig' onClick={() => setChoice(2)}>税收和退休金 - 我需要知道些什么?</button>
                 <button className='btnBig' onClick={() => setChoice(3)}>就业权利 - 我有什么基本权利和义务?</button>
